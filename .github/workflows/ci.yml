@@ -17,7 +17,7 @@ jobs:
       - name: Auto green
         run: |
           git config --local user.email "cored1011@163.com"
-          git config --local user.name "7a0111"
+          git config --local user.name "7a011"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
           git commit --allow-empty -m "自动点绿"
